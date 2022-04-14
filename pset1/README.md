@@ -1,5 +1,5 @@
 # - Pset1 -
-#### Aprendendo sobre Sistema de Controle de Versão, implementação de projetos lógicos e utilização de SGBD relacionais.
+### Aprendendo sobre Sistema de Controle de Versão, implementação de projetos lógicos e utilização de SGBD relacionais.
 ---
 
 **Aluno: João Lucas de Assis Oliveira**
@@ -41,3 +41,5 @@ O arquivo do projeto lógico proposto se encontra neste repositório, dentro do 
 A partir desse projeto lógico criado no *_SQL Power Architect_* foram gerados dois scripts para os SGBD: ***PostgreSQL*** e ***MariaBD***/***MySQL***.
 
 Ambos os scripts apresentam suas tabelas e colunas comentadas de acordo com os anexos fornecidos pelo professor Abrantes.
+
+⚠️🚩 README em construção 🚩⚠️
