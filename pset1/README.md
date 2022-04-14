@@ -10,6 +10,13 @@
 
 ---
 
+[GIT](## GIT) •
+[GitHub](## GitHub) •
+[Elmasri](## Elmasri) •
+[PostgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/edit/main/pset1/README.md/##PostgreSQL) •
+[MariaBD/MySQL](## MariaBD/MySQL)
+
+
 ## GIT
 O `GIT` é um ***Sistema de Controle de Versão***. Um ***Sistema de Controle de Versão*** é um sistema registra todas as alterações feitas em um
 código fonte.
@@ -38,8 +45,14 @@ Para a criação do projeto lógico, foi utilizado o *_SQL Power Architect_*, um
 
 O arquivo do projeto lógico proposto se encontra neste repositório, dentro do subdiretório *_Pset1_*.
 
+![imagem meu projeto lógico](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/projeto_logico_elmasri.jpeg)
+
 A partir desse projeto lógico criado no *_SQL Power Architect_* foram gerados dois scripts para os SGBD: ***PostgreSQL*** e ***MariaBD***/***MySQL***.
 
 Ambos os scripts apresentam suas tabelas e colunas comentadas de acordo com os anexos fornecidos pelo professor Abrantes.
+
+## PostgreSQL
+
+## MariaBD/MySQL
 
 ⚠️🚩 README em construção 🚩⚠️
