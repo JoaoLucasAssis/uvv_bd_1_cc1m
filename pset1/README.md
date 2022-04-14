@@ -10,10 +10,10 @@
 
 ---
 
-[GIT](##GIT)•
-[GitHub](##GitHub) •
-[Elmasri](##Elmasri) •
-[PostgreSQL](##PostgreSQL) •
+[GIT](README.md##GIT) •
+[GitHub](README.md##GitHub) •
+[Elmasri](README.md##Elmasri) •
+[PostgreSQL](README.md##PostgreSQL) •
 [MariaBD/MySQL](README.md##MariaBD/MySQL)
 
 
