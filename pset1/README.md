@@ -10,11 +10,11 @@
 
 ---
 
-[GIT](## GIT) •
-[GitHub](## GitHub) •
-[Elmasri](## Elmasri) •
-[PostgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/main/pset1/README.md/##PostgreSQL) •
-[MariaBD/MySQL](## MariaBD/MySQL)
+[GIT](##GIT)•
+[GitHub](##GitHub) •
+[Elmasri](##Elmasri) •
+[PostgreSQL](##PostgreSQL) •
+[MariaBD/MySQL](README.md#MariaBD/MySQL)
 
 
 ## GIT
