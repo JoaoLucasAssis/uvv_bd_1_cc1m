@@ -13,7 +13,7 @@
 [GIT](## GIT) •
 [GitHub](## GitHub) •
 [Elmasri](## Elmasri) •
-[PostgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/edit/main/pset1/README.md/##PostgreSQL) •
+[PostgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/main/pset1/README.md/##PostgreSQL) •
 [MariaBD/MySQL](## MariaBD/MySQL)
 
 
