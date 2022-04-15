@@ -14,7 +14,7 @@
 [GitHub](#github) •
 [Elmasri](#elmasri) •
 [PostgreSQL](#postgresql) •
-[MariaBD/MySQL](#mariabd-mysql)
+[MariaBD/MySQL](#mariabdmysql)
 
 
 ## GIT
