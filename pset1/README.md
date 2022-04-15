@@ -55,7 +55,9 @@ Ambos os scripts apresentam suas tabelas e colunas comentadas de acordo com os a
 
 O ***PostgreSQL*** é uma ferramenta que atua como sistema de gerenciamento de bancos de dados relacionados. Tem o papel de gerenciar os dados desses bancos de maneira organizada e eficaz, rodando e gravando todas as informações que ficam registradas nesses compartimentos.
 
-Neste projeto, foi proposto a criação de um usuário para a criação do banco de dados, implementação do projeto e dos dados. Segue abaixo os comandos utilizados para a criação do usuário.
+Neste projeto, foi proposto autilização do ***PostgreSQL*** para a criação de um banco de dados, implementação do projeto lógico e a implementação dos dados.
+
+Como informado pelo professor, o primeiro passo é a criação de um usuário. Portanto, segue abaixo os comandos utilizados para a criação desse usuário.
 
 >[!NOTE]
 >
@@ -83,5 +85,25 @@ Com isso, finalizamos a etapa de criação dentro do ***PostgreSQL***. Com o `sc
 O script completo com os comandos de criação e implementação se encontra dentro deste subdiretório [*_Pset1_*](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/pset1/script_mariaBD.txt).
 
 ## MariaBD/MySQL
+
+O ***MariaDB*** é um sistema de gerenciamento de banco de dados que surgiu como fork do ***MySQL***. Na maioria dos aspectos o ***MariaDB*** vai funcionar exatamente como o ***MySQL***. Ambos são capazes de criar um banco de dados para armazenamento e manipulação de dados, definindo a relação de cada tabela.
+
+Neste projeto, foi proposto autilização do ***MariaBD***/***MySQL*** para a criação de um banco de dados, implementação do projeto lógico e a implementação dos dados.
+
+Como informado pelo professor, o primeiro passo é a criação de um usuário. Portanto, segue abaixo os comandos utilizados para a criação desse usuário.
+
+>[!NOTE]
+>
+> Todos os comandos foram executados por meio de um terminal Windows.
+
+![Comando create user MySQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create_user_MySQL.jpeg)
+
+Com o usuário já criado, agora podemos criar o banco de dados de acordo com os passos informados no ***Pset1***.
+
+![Comando create database MySQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create_database_MySQL.jpeg)
+
+Com isso, finalizamos a etapa de criação dentro do ***MariaBD***/***MySQL***. Com o banco de dados criado, podemos implementar o projeto lógico e os dados.
+
+O script completo com os comandos de criação e implementação se encontra dentro deste subdiretório [*_Pset1_*](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/pset1/script_mariaBD.txt).
 
 ⚠️🚩 README em construção 🚩⚠️
