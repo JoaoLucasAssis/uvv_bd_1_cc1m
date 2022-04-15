@@ -88,7 +88,7 @@ O script completo com os comandos de criação e implementação se encontra den
 
 O ***MariaDB*** é um sistema de gerenciamento de banco de dados que surgiu como fork do ***MySQL***. Na maioria dos aspectos o ***MariaDB*** vai funcionar exatamente como o ***MySQL***. Ambos são capazes de criar um banco de dados para armazenamento e manipulação de dados, definindo a relação de cada tabela.
 
-Neste projeto, foi proposto autilização do ***MariaBD***/***MySQL*** para a criação de um banco de dados, implementação do projeto lógico e a implementação dos dados.
+Neste projeto, foi proposto a utilização do ***MariaBD***/***MySQL*** para a criação de um banco de dados, implementação do projeto lógico e a implementação dos dados.
 
 Como informado pelo professor, o primeiro passo é a criação de um usuário. Portanto, segue abaixo os comandos utilizados para a criação desse usuário.
 
