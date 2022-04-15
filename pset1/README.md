@@ -53,6 +53,25 @@ Ambos os scripts apresentam suas tabelas e colunas comentadas de acordo com os a
 
 ## PostgreSQL
 
+O ***PostgreSQL*** é uma ferramenta que atua como sistema de gerenciamento de bancos de dados relacionados. Tem o papel de gerenciar os dados desses bancos de maneira organizada e eficaz, rodando e gravando todas as informações que ficam registradas nesses compartimentos.
+
+Neste projeto, foi proposto a criação de um usuário para a criação do banco de dados, implementação do projeto e dos dados. Segue abaixo os comandos utilizados para a criação do usuário.
+
+>[!NOTE]
+>
+> Todos os comandos foram executados por meio de um terminal Linux.
+
+![comando create user postgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/createuser_postgreSQL.jpeg)
+
+* `createuser`: Comando para criar a role do usuário.
+* `dPs`: Privilégios concedidos ao usuário criado.
+* Senha para o usuário criado: 123456
+* `psql`: Comando para acessar ao banco de dados do PostgreSQL.
+* Senha para o usuário postgres: computacao@raiz.
+* `\du`: Comando psql para visualizar os usuários já criados.
+
+Com o usuário já criado, agora podemos criar o banco de dados de acordo com os passos informados no ***Pset1***. 
+
 ## MariaBD/MySQL
 
 ⚠️🚩 README em construção 🚩⚠️
