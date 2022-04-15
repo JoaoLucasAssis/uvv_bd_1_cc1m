@@ -61,7 +61,7 @@ Neste projeto, foi proposto a criação de um usuário para a criação do banco
 >
 > Todos os comandos foram executados por meio de um terminal Linux.
 
-![comando create user postgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/createuser postgreSQL.jpeg)
+![comando create user postgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/createuser_postgreSQL.jpeg)
 
 * `createuser`: Comando para criar a role do usuário.
 * `dPs`: Privilégios concedidos ao usuário criado.
@@ -72,11 +72,11 @@ Neste projeto, foi proposto a criação de um usuário para a criação do banco
 
 Com o usuário já criado, agora podemos criar o banco de dados de acordo com os passos informados no ***Pset1***. 
 
-![comando create database postgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create database uvv.jpeg)
+![comando create database postgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create_database_postgreSQL.jpeg)
 
 Agora que o banco de dados foi criado, está na hora de criar o `schema`, local onde será armazenado o script com os comandos para a implementação do projeto lógico.
 
-![comando create database postgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create schema.jpeg)
+![comando create database postgreSQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create_schema_postgreSQL.jpeg)
 
 Com isso, finalizamos a etapa de criação dentro do ***PostgreSQL***. Com o `schema` criado, podemos implementar o projeto lógico dentro do banco de dados postgres.
 
