@@ -3,13 +3,13 @@ mysql -u root -p
 
 
 
-CREATE USER 'joaolucasassis'@'localhost' IDENTIFIED BY '12345678';
-GRANT all ON uvv.* TO 'joaolucasassis'@'localhost';
+CREATE USER 'joaolucas'@'localhost' IDENTIFIED BY '123456';
+GRANT all ON uvv.* TO 'joaolucas'@'localhost';
 
 
 
-System mysql -u joaolucasassis -p
-12345678
+SYSTEM mysql -u joaolucas -p
+123456
 
 
 
@@ -31,17 +31,17 @@ CREATE TABLE funcionarios (
                 cpf_supervisor CHAR(11) NOT NULL,
                 PRIMARY KEY (cpf)
 );
-ALTER TABLE funcionarios COMMENT 'Tabela que armazena as informaÁıes dos funcion·rios.';
-ALTER TABLE funcionarios MODIFY COLUMN cpf CHAR(11) COMMENT 'CPF do funcion·rio. Ser· a PK da tabela.';
-ALTER TABLE funcionarios MODIFY COLUMN primeiro_nome VARCHAR(15) COMMENT 'Primeiro nome do funcion·rio.';
+ALTER TABLE funcionarios COMMENT 'Tabela que armazena as informa√ß√µes dos funcion√°rios.';
+ALTER TABLE funcionarios MODIFY COLUMN cpf CHAR(11) COMMENT 'CPF do funcion√°rio. Ser√° a PK da tabela.';
+ALTER TABLE funcionarios MODIFY COLUMN primeiro_nome VARCHAR(15) COMMENT 'Primeiro nome do funcion√°rio.';
 ALTER TABLE funcionarios MODIFY COLUMN nome_meio CHAR(1) COMMENT 'Inicial do nome do meio.';
-ALTER TABLE funcionarios MODIFY COLUMN ultimo_nome VARCHAR(15) COMMENT 'Sobrenome do funcion·rio.';
-ALTER TABLE funcionarios MODIFY COLUMN data_nascimento DATE COMMENT 'Data de nascimento do funcion·rio.';
-ALTER TABLE funcionarios MODIFY COLUMN endereco VARCHAR(30) COMMENT 'EndereÁo do funcion·rio.';
-ALTER TABLE funcionarios MODIFY COLUMN sexo CHAR(1) COMMENT 'Sexo do funcion·rio.';
-ALTER TABLE funcionarios MODIFY COLUMN salario DECIMAL(10, 2) COMMENT 'Sal·rio do funcion·rio.';
-ALTER TABLE funcionarios MODIFY COLUMN numero_departamento INTEGER COMMENT 'N˙mero do departamento do funcion·rio. FK de departamento';
-ALTER TABLE funcionarios MODIFY COLUMN cpf_supervisor CHAR(11) COMMENT 'Cpf do supervisor. … FK da prÛpria tabela.';
+ALTER TABLE funcionarios MODIFY COLUMN ultimo_nome VARCHAR(15) COMMENT 'Sobrenome do funcion√°rio.';
+ALTER TABLE funcionarios MODIFY COLUMN data_nascimento DATE COMMENT 'Data de nascimento do funcion√°rio.';
+ALTER TABLE funcionarios MODIFY COLUMN endereco VARCHAR(30) COMMENT 'Endere√ßo do funcion√°rio.';
+ALTER TABLE funcionarios MODIFY COLUMN sexo CHAR(1) COMMENT 'Sexo do funcion√°rio.';
+ALTER TABLE funcionarios MODIFY COLUMN salario DECIMAL(10, 2) COMMENT 'Sal√°rio do funcion√°rio.';
+ALTER TABLE funcionarios MODIFY COLUMN numero_departamento INTEGER COMMENT 'N√∫mero do departamento do funcion√°rio. FK de departamento';
+ALTER TABLE funcionarios MODIFY COLUMN cpf_supervisor CHAR(11) COMMENT 'Cpf do supervisor. √â FK da pr√≥pria tabela.';
 ALTER TABLE funcionarios
 ADD CHECK (sexo in('M', 'm', 'F', 'f'));
 ALTER TABLE funcionarios 
@@ -57,12 +57,12 @@ CREATE TABLE dependentes (
                 parentesco VARCHAR(15),
                 PRIMARY KEY (cpf_funcionario, nome_dependente)
 );
-ALTER TABLE dependentes COMMENT 'Tabela que armazena as informaÁıes dos dependentes dos funcion·rios.';
-ALTER TABLE dependentes MODIFY COLUMN cpf_funcionario CHAR(11) COMMENT 'CPF do funcion·rio. PK desta tabela e FK de funcion·rio.';
+ALTER TABLE dependentes COMMENT 'Tabela que armazena as informa√ß√µes dos dependentes dos funcion√°rios.';
+ALTER TABLE dependentes MODIFY COLUMN cpf_funcionario CHAR(11) COMMENT 'CPF do funcion√°rio. PK desta tabela e FK de funcion√°rio.';
 ALTER TABLE dependentes MODIFY COLUMN nome_dependente VARCHAR(15) COMMENT 'Nome do dependente. Faz parte da PK desta tabela.';
 ALTER TABLE dependentes MODIFY COLUMN sexo CHAR(1) COMMENT 'Sexo do dependente.';
 ALTER TABLE dependentes MODIFY COLUMN data_nascimento DATE COMMENT 'Data de nascimento do dependente.';
-ALTER TABLE dependentes MODIFY COLUMN parentesco VARCHAR(15) COMMENT 'DescriÁ„o do parentesco do dependente com o funcion·rio.';
+ALTER TABLE dependentes MODIFY COLUMN parentesco VARCHAR(15) COMMENT 'Descri√ß√£o do parentesco do dependente com o funcion√°rio.';
 ALTER TABLE dependentes
 ADD CHECK (sexo in('M', 'm', 'F', 'f'));
 
@@ -75,11 +75,11 @@ CREATE TABLE departamentos (
                 data_inicio_gerente DATE,
                 PRIMARY KEY (numero_departamento)
 );
-ALTER TABLE departamentos COMMENT 'Tabela que armazena as informaÁo?s dos departamentos.';
-ALTER TABLE departamentos MODIFY COLUMN numero_departamento INTEGER COMMENT 'N˙mero do departamento. … a PK desta tabela.';
-ALTER TABLE departamentos MODIFY COLUMN nome_departamento VARCHAR(15) COMMENT 'Nome do departamento. Deve ser ˙nico.';
-ALTER TABLE departamentos MODIFY COLUMN cpf_gerente CHAR(11) COMMENT 'CPF do gerente do departamento.FK de funcion·rios.';
-ALTER TABLE departamentos MODIFY COLUMN data_inicio_gerente DATE COMMENT 'Data do inÌcio do gerente no departamento.';
+ALTER TABLE departamentos COMMENT 'Tabela que armazena as informa√ßo·∫Ωs dos departamentos.';
+ALTER TABLE departamentos MODIFY COLUMN numero_departamento INTEGER COMMENT 'N√∫mero do departamento. √â a PK desta tabela.';
+ALTER TABLE departamentos MODIFY COLUMN nome_departamento VARCHAR(15) COMMENT 'Nome do departamento. Deve ser √∫nico.';
+ALTER TABLE departamentos MODIFY COLUMN cpf_gerente CHAR(11) COMMENT 'CPF do gerente do departamento.FK de funcion√°rios.';
+ALTER TABLE departamentos MODIFY COLUMN data_inicio_gerente DATE COMMENT 'Data do in√≠cio do gerente no departamento.';
 CREATE UNIQUE INDEX departamentos_idx
  ON departamentos
  ( nome_departamento );
@@ -91,9 +91,9 @@ CREATE TABLE localizacoes_departamento (
                 local VARCHAR(15) NOT NULL,
                 PRIMARY KEY (numero_departamento, local)
 );
-ALTER TABLE localizacoes_departamento COMMENT 'Tabela que armazena as possÌveis localizaÁıes dos departamentos.';
-ALTER TABLE localizacoes_departamento MODIFY COLUMN local VARCHAR(15) COMMENT 'LocalizaÁ„o do departamento. Faz parte da PK desta tabela.';
-ALTER TABLE localizacoes_departamento MODIFY COLUMN numero_departamento INTEGER COMMENT 'N˙mero do departamento. PK desta tabela.';
+ALTER TABLE localizacoes_departamento COMMENT 'Tabela que armazena as poss√≠veis localiza√ß√µes dos departamentos.';
+ALTER TABLE localizacoes_departamento MODIFY COLUMN local VARCHAR(15) COMMENT 'Localiza√ß√£o do departamento. Faz parte da PK desta tabela.';
+ALTER TABLE localizacoes_departamento MODIFY COLUMN numero_departamento INTEGER COMMENT 'N√∫mero do departamento. PK desta tabela.';
 
 
 
@@ -104,11 +104,11 @@ CREATE TABLE projeto (
                 numero_departamento INT NOT NULL,
                 PRIMARY KEY (numero_projeto)
 );
-ALTER TABLE projeto COMMENT 'Tabela que armazena as informaÁıes sobre os projetos dos departamentos.';
-ALTER TABLE projeto MODIFY COLUMN numero_projeto INTEGER COMMENT 'N˙mero do projeto. … a PK desta tabela.';
-ALTER TABLE projeto MODIFY COLUMN nome_projeto VARCHAR(15) COMMENT 'Nome do projeto. Deve ser ˙nico.';
-ALTER TABLE projeto MODIFY COLUMN local_projeto VARCHAR(15) COMMENT 'LocalizaÁ„o do projeto.';
-ALTER TABLE projeto MODIFY COLUMN numero_departamento INTEGER COMMENT 'N˙mero do departamento. … uma FK de departamento.';
+ALTER TABLE projeto COMMENT 'Tabela que armazena as informa√ß√µes sobre os projetos dos departamentos.';
+ALTER TABLE projeto MODIFY COLUMN numero_projeto INTEGER COMMENT 'N√∫mero do projeto. √â a PK desta tabela.';
+ALTER TABLE projeto MODIFY COLUMN nome_projeto VARCHAR(15) COMMENT 'Nome do projeto. Deve ser √∫nico.';
+ALTER TABLE projeto MODIFY COLUMN local_projeto VARCHAR(15) COMMENT 'Localiza√ß√£o do projeto.';
+ALTER TABLE projeto MODIFY COLUMN numero_departamento INTEGER COMMENT 'N√∫mero do departamento. √â uma FK de departamento.';
 CREATE UNIQUE INDEX projeto_idx
  ON projeto
  ( nome_projeto );
@@ -121,10 +121,10 @@ CREATE TABLE trabalha_em (
                 horas DECIMAL(3,1) NOT NULL,
                 PRIMARY KEY (cpf_funcionario, numero_projeto)
 );
-ALTER TABLE trabalha_em COMMENT 'Tabela para armazenar quais funcion·rios trabalham em quais projetos.';
-ALTER TABLE trabalha_em MODIFY COLUMN cpf_funcionario CHAR(11) COMMENT 'CPF do funcion·rio. PK desta tabela e FK de funcion·rio.';
-ALTER TABLE trabalha_em MODIFY COLUMN numero_projeto INTEGER COMMENT 'N˙mero do projeto. PK desta tabela e FK de projeto.';
-ALTER TABLE trabalha_em MODIFY COLUMN horas DECIMAL(3, 1) COMMENT 'Horas trabalhadas pelo funcion·rio neste projeto.';
+ALTER TABLE trabalha_em COMMENT 'Tabela para armazenar quais funcion√°rios trabalham em quais projetos.';
+ALTER TABLE trabalha_em MODIFY COLUMN cpf_funcionario CHAR(11) COMMENT 'CPF do funcion√°rio. PK desta tabela e FK de funcion√°rio.';
+ALTER TABLE trabalha_em MODIFY COLUMN numero_projeto INTEGER COMMENT 'N√∫mero do projeto. PK desta tabela e FK de projeto.';
+ALTER TABLE trabalha_em MODIFY COLUMN horas DECIMAL(3, 1) COMMENT 'Horas trabalhadas pelo funcion√°rio neste projeto.';
 ALTER TABLE trabalha_em
 ADD CHECK (horas>=0.0);
 
@@ -189,21 +189,21 @@ ON UPDATE NO ACTION;
 
 
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
-VALUES ('Jorge', 'E', 'Brito', '88866555576', '1937-11-10','RuadoHorto35,S„oPaulo,SP', 'M', '55000', '88866555576', 1 );
+VALUES ('Jorge', 'E', 'Brito', '88866555576', '1937-11-10','RuadoHorto35,S√£oPaulo,SP', 'M', '55000', '88866555576', 1 );
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
-VALUES ('Jennifer', 'S', 'Souza', '98765432168', '1941-06-20','AvArthurLima54,SantoAndrÈ,SP', 'F', '43000', '88866555576', 4 );
+VALUES ('Jennifer', 'S', 'Souza', '98765432168', '1941-06-20','AvArthurLima54,SantoAndr√©,SP', 'F', '43000', '88866555576', 4 );
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
 VALUES ('Alice', 'J', 'Zelaya', '99988777767', '1968-01-19','RuaSouzaLima35,Curitiba,PR', 'F', '25000', '98765432168', 4 );
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
-VALUES ('AndrÈ', 'V', 'Pereira', '98798798733', '1969-03-29','RuaTimbira35,S„oPaulo,SP', 'M', '25000', '98765432168', 4 );
+VALUES ('Andr√©', 'V', 'Pereira', '98798798733', '1969-03-29','RuaTimbira35,S√£oPaulo,SP', 'M', '25000', '98765432168', 4 );
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
-VALUES ('Fernando', 'T', 'Wong', '33344555587', '1955-12-08','RuadaLapa34,S„o Paulo,SP', 'M', '40000', '88866555576', 5 );
+VALUES ('Fernando', 'T', 'Wong', '33344555587', '1955-12-08','RuadaLapa34,S√£o Paulo,SP', 'M', '40000', '88866555576', 5 );
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
-VALUES ('Jo„o', 'B', 'Silva', '12345678966', '1965-01-09','RuadasFlores751,S„oPaulo,SP', 'M', '30000', '33344555587', 5 );
+VALUES ('Jo√£o', 'B', 'Silva', '12345678966', '1965-01-09','RuadasFlores751,S√£oPaulo,SP', 'M', '30000', '33344555587', 5 );
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
-VALUES ('Ronaldo', 'K', 'Lima', '66688444476', '1962-09-15','RuaRebouÁas65,Piracicaba,SP', 'M', '38000', '33344555587', 5 );
+VALUES ('Ronaldo', 'K', 'Lima', '66688444476', '1962-09-15','RuaRebou√ßas65,Piracicaba,SP', 'M', '38000', '33344555587', 5 );
 INSERT INTO funcionarios(primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
-VALUES ('Joice', 'A', 'Leite', '45345345376', '1972-07-31','AvLucasObes74,S„oPaulo,SP', 'F', '25000', '33344555587', 5 );
+VALUES ('Joice', 'A', 'Leite', '45345345376', '1972-07-31','AvLucasObes74,S√£oPaulo,SP', 'F', '25000', '33344555587', 5 );
 
 
 
@@ -212,50 +212,50 @@ VALUES( 'Matriz', 1, '88866555576', '1981-06-19');
 INSERT INTO departamentos( nome_departamento, numero_departamento, cpf_gerente, data_inicio_gerente)
 VALUES( 'Pesquisa', 5, '33344555587', '1988-05-22');
 INSERT INTO departamentos( nome_departamento, numero_departamento, cpf_gerente, data_inicio_gerente)
-VALUES( 'AdministraÁ„o', 4, '98765432168', ' 1995-01-01');
+VALUES( 'Administra√ß√£o', 4, '98765432168', ' 1995-01-01');
 
 
 
 INSERT INTO localizacoes_departamento( numero_departamento, local)
-VALUES( 1, ' S„o Paulo');
+VALUES( 1, ' S√£o Paulo');
 INSERT INTO localizacoes_departamento( numero_departamento, local)
-VALUES( 4, ' Mau·');
+VALUES( 4, ' Mau√°');
 INSERT INTO localizacoes_departamento( numero_departamento, local)
-VALUES( 5, ' Santo AndrÈ');
+VALUES( 5, ' Santo Andr√©');
 INSERT INTO localizacoes_departamento( numero_departamento, local)
 VALUES( 5, ' Itu');
 INSERT INTO localizacoes_departamento( numero_departamento, local)
-VALUES( 5, ' S„o Paulo');
+VALUES( 5, ' S√£o Paulo');
 
 
 
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
-VALUES( 'ProdutoX', 1, 'Santo AndrÈ', 5);
+VALUES( 'ProdutoX', 1, 'Santo Andr√©', 5);
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
 VALUES( 'ProdutoY', 2, 'Itu', 5);
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
-VALUES( 'ProdutoZ', 3, 'S„o Paulo', 5);
+VALUES( 'ProdutoZ', 3, 'S√£o Paulo', 5);
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
-VALUES( 'InformatizaÁ„o', 10, 'Mau·', 4);
+VALUES( 'Informatiza√ß√£o', 10, 'Mau√°', 4);
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
-VALUES( 'ReorganizaÁ„o', 20, 'S„o Paulo', 1);
+VALUES( 'Reorganiza√ß√£o', 20, 'S√£o Paulo', 1);
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
-VALUES( 'NovosbenefÌcios', 30, 'Mau·', 4);
+VALUES( 'Novosbenef√≠cios', 30, 'Mau√°', 4);
 
 
 
 INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
-VALUES( '33344555587', 'AlÌcia', 'F', '1986-04-05', 'Filha');
+VALUES( '33344555587', 'Al√≠cia', 'F', '1986-04-05', 'Filha');
 INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '33344555587', 'Tiago', 'M', '1983-10-25', 'Filho');
 INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
-VALUES( '33344555587', 'JanaÌna', 'F', '1958-05-03', 'Esposa');
+VALUES( '33344555587', 'Jana√≠na', 'F', '1958-05-03', 'Esposa');
 INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '98765432168', 'Antonio', 'M', '1942-02-28', 'Marido');
 INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '12345678966', 'Michael', 'M', '1988-01-04', 'Filho');
 INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
-VALUES( '12345678966', 'AlÌcia', 'F', '1988-12-30', 'Filha');
+VALUES( '12345678966', 'Al√≠cia', 'F', '1988-12-30', 'Filha');
 INSERT INTO dependentes( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '12345678966', 'Elizabeth', 'F', '1967-05-05', 'Esposa');
 
