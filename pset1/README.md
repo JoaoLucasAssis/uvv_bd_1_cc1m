@@ -34,16 +34,16 @@ Essas são algumas funções do GitHub:
 * `Branch`: cópia do diretório para desenvolvimento isolado.
 * `Pull Request`: é quando você informa que irá implantar as mudanças no seu branch ao diretório.
 
-Foi orientado pelo professor Abrantes a hospedagem do projeto no `GitHub` e criação de um subdiretório para a documentação do projeto em linguagem ***Markdown***.
+Foi orientado pelo professor Abrantes a hospedagem do projeto no `GitHub` e a criação de um subdiretório para a documentação do projeto em linguagem *_Markdown_*.
 
 ## Elmasri 
 #### Implementação do projeto lógico
 
-Foi proposto a implementação do projeto lógico apresentado nos capítulos 5 e 6 do livro *_Sistemas de Banco de Dados_*, 7ª edição, dos autores Elmasri & Navathe.
+Foi proposto a criação e implementação do projeto lógico apresentado nos capítulos 5 e 6 do livro *_Sistemas de Banco de Dados_*, 7ª edição, dos autores Elmasri & Navathe.
 
 Para a criação do projeto lógico, foi utilizado o *_SQL Power Architect_*, uma ferramenta de modelagem e perfil de dados.
 
-O arquivo do projeto lógico proposto se encontra neste repositório, dentro do subdiretório *_Pset1_*.
+O arquivo do projeto lógico proposto se encontra neste repositório, dentro do subdiretório [*_Pset1_*](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/pset1/projeto_logico_elmasri.architect).
 
 ![imagem meu projeto lógico](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/projeto_logico_elmasri.jpeg)
 
