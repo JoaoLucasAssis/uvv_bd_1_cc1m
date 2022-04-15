@@ -82,7 +82,7 @@ Agora que o banco de dados foi criado, está na hora de criar o `schema`, local 
 
 Com isso, finalizamos a etapa de criação dentro do ***PostgreSQL***. Com o `schema` criado, podemos implementar o projeto lógico dentro do banco de dados postgres.
 
-O script completo com os comandos de criação e implementação se encontra dentro deste subdiretório [*_Pset1_*](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/pset1/script_mariaBD.txt).
+O script completo com os comandos de criação e implementação se encontra dentro deste subdiretório [*_Pset1_*](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/pset1/script_PostgreSQL.txt).
 
 ## MariaBD/MySQL
 
