@@ -98,6 +98,10 @@ Como informado pelo professor, o primeiro passo é a criação de um usuário. P
 
 ![Comando create user MySQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create_user_MySQL.jpeg)
 
+* `create user`: Comando para criar o usuário.
+* `grant`: Comando que concede os privilégios ao usuário.
+* `system mysql`: Comando para trocar de usuário.
+
 Com o usuário já criado, agora podemos criar o banco de dados de acordo com os passos informados no ***Pset1***.
 
 ![Comando create database MySQL](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/imgPset1/create_database_MySQL.jpeg)
