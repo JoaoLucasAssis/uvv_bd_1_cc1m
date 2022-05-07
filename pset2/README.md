@@ -13,7 +13,7 @@
 [GIT](#git) •
 [GitHub](#github) •
 [Elmasri](#elmasri) •
-[15](#questao_15) •
+[15](#questão_15) •
 [MariaBD/MySQL](#mariabdmysql)
 
 ---
