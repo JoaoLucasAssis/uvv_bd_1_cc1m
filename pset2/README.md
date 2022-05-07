@@ -1,6 +1,10 @@
 # - Pset2 -
 ### Aprendendo a desenvolver relatórios em linguagem SQL
 
+>[!NOTE]
+>
+> Todos os relatórios foram feitos em cima do projeto lógico implementado no [_Pset1_](https://github.com/JoaoLucasAssis/uvv_bd_1_cc1m/blob/main/pset1).
+
 ---
 
 [01](#questão_01) • 
