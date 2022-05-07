@@ -13,7 +13,7 @@
 [GIT](#git) •
 [GitHub](#github) •
 [Elmasri](#elmasri) •
-[15](#questão15) •
+[15](#15) •
 [MariaBD/MySQL](#mariabdmysql)
 
 ---
@@ -98,7 +98,7 @@ pela idade em anos completos, de forma decrescente.
 
 prepare um relatório que exiba quantos funcionários cada departamento tem.
 
-## QUESTÃO 15:
+## 15:
 
 como um funcionário pode estar alocado em mais de um projeto,
 prepare um relatório que exiba o nome completo do funcionário, o departamento
