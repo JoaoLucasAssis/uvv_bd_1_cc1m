@@ -113,7 +113,7 @@ Relatório que mostra, para cada funcionário que não tem dependente, seu nome 
 ## QUESTÃO_08:
 
 Relatório que mostra, para cada departamento, os projetos desse departamento e o nome completo dos funcionários que estão alocados
-em cada projeto, com o número de horas trabalhadas por cada funcionário, em cada projeto.
+em cada projeto. E em cada projeto, o número de horas trabalhadas por cada funcionário.
 
 | nome_departamento | nome_funcionario | nome_projeto    | horas |
 |-------------------|------------------|-----------------|-------|
