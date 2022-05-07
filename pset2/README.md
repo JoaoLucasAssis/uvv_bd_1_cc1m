@@ -14,7 +14,7 @@
 [GitHub](#github) •
 [Elmasri](#elmasri) •
 [15](#questão_15) •
-[14](#questão_14:)
+[14](#questão_14)
 
 ---
 
