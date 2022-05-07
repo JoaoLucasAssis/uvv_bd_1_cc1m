@@ -10,15 +10,15 @@
 
 ---
 
-[1](#questão_1) •
-[2](#questão_2) •
-[3](#questão_3) •
-[4](#questão_4) •
-[5](#questão_5) •
-[6](#questão_6) •
-[7](#questão_7) •
-[8](#questão_8) •
-[9](#questão_9) •
+[1](#questão_01) •
+[2](#questão_02) •
+[3](#questão_03) •
+[4](#questão_04) •
+[5](#questão_05) •
+[6](#questão_06) •
+[7](#questão_07) •
+[8](#questão_08) •
+[9](#questão_09) •
 [10](#questão_10) •
 [11](#questão_11) •
 [12](#questão_12) •
