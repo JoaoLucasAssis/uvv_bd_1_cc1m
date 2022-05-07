@@ -1,12 +1,5 @@
 # - Pset1 -
 ### Aprendendo sobre Sistema de Controle de Versão, implementação de projetos lógicos e utilização de SGBD relacionais.
----
-
-**Aluno: João Lucas de Assis Oliveira**
-
-**Professor: Abrantes Araujo Silva Filho**
-
-**Monitora: Suellen Miranda Amorim**
 
 ---
 
