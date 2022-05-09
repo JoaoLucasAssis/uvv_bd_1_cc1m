@@ -153,7 +153,7 @@ Relatório que mostra a soma total das horas de cada projeto em cada departament
 
 ## QUESTÃO_10:
 
-Relatório que mostre a média salarial dos funcionários de cada departamento.
+Relatório que mostra a média salarial dos funcionários de cada departamento.
 
 | departamento | media_salário |
 |--------------|---------------|
